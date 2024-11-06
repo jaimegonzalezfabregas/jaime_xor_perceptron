@@ -1,0 +1,28 @@
+[package]
+name = "perceptron"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+debug = true
+
+[toolchain]
+channel = "nightly"
+
+[dependencies]
+byteorder = "1.5.0"
+jaime = "2.0.0"
+# jaime = { path = "../engine" }
+flate2 = "1.0.34"
+rand = "0.8.5"
+rand_chacha = "0.3.1"
+
+piston = "1.0.0"
+piston2d-graphics = "0.45.0"
+pistoncore-glutin_window = "0.72.0"
+piston2d-opengl_graphics = "0.85.0"
+
+
+piston_window = "0.132.0"
+image = "0.25.1"
+vecmath = "1.0.0"
