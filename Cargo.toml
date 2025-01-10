@@ -11,7 +11,7 @@ channel = "nightly"
 
 [dependencies]
 byteorder = "1.5.0"
-jaime = "2.0.0"
+jaime = "2.1.1"
 # jaime = { path = "../engine" }
 flate2 = "1.0.34"
 rand = "0.8.5"
