@@ -6,12 +6,9 @@ extern crate vecmath;
 mod matrix;
 mod neuronal_network;
 
-use jaime::{
-    simd_arr::hybrid_simd::CriticalityCue,
-    trainer::{
-        asymptotic_gradient_descent_trainer::AsymptoticGradientDescentTrainer,
-        default_param_translator, DataPoint, Trainer,
-    },
+use jaime::trainer::{
+    asymptotic_gradient_descent_trainer::AsymptoticGradientDescentTrainer,
+    default_param_translator, DataPoint, Trainer,
 };
 
 use neuronal_network::neuronal_network;
