@@ -68,6 +68,14 @@ impl<N: From<f32> + Clone + Debug> Matrix<N> {
         self
     }
 
+    pub fn add_reminder<const X: usize>(mut self, reminder: &[N; X]) -> Matrix<N> {
+        for n in reminder {
+            self.0.push(vec![n.clone()]);
+        }
+
+        self
+    }
+
     pub fn serialize(self) -> Vec<N> {
         self.0.into_iter().flat_map(|x| x).collect()
     }
@@ -102,7 +110,6 @@ where
     type Output = Matrix<T>;
 
     fn mul(self, rhs: Matrix<T>) -> Matrix<T> {
-
         let m = self.rows();
         let n = self.cols();
         let p = rhs.cols();

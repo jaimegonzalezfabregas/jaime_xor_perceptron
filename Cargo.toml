@@ -6,13 +6,10 @@ edition = "2021"
 [profile.release]
 debug = true
 
-[toolchain]
-channel = "nightly"
-
 [dependencies]
 byteorder = "1.5.0"
-jaime = "*"
-# jaime = { path = "../engine" }
+# jaime = "*"
+jaime = { path = "../engine" }
 flate2 = "1.0.34"
 rand = "0.8.5"
 rand_chacha = "0.3.1"
@@ -26,3 +23,4 @@ piston2d-opengl_graphics = "0.85.0"
 piston_window = "0.132.0"
 image = "0.25.1"
 vecmath = "1.0.0"
+tqdm = "0.7.0"
